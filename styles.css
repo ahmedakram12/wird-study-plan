@@ -1,0 +1,42 @@
+
+:root{--bg:#f5f6f2;--sf:#fff;--tx:#182b28;--mu:#64736f;--ln:#e4e9e5;--gr:#176b55;--gt:#fff;--gs:#e8f3ee;--as:#fbf2e3;--at:#79511e;color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#121917;--sf:#1b2522;--tx:#e8f0ed;--mu:#9fb0aa;--ln:#2c3a36;--gr:#5fc9a6;--gt:#0b1f19;--gs:#1f3a32;--as:#3a2f1c;--at:#f0d29b;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#121917;--sf:#1b2522;--tx:#e8f0ed;--mu:#9fb0aa;--ln:#2c3a36;--gr:#5fc9a6;--gt:#0b1f19;--gs:#1f3a32;--as:#3a2f1c;--at:#f0d29b;color-scheme:dark}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--tx);font:15px/1.6 system-ui,"Segoe UI",Tahoma,sans-serif}
+.stage{max-width:430px;margin:0 auto;min-height:100vh;display:flex;flex-direction:column;background:var(--bg)}
+@media (min-width:480px){.stage{min-height:0;margin:20px auto;border:1px solid var(--ln);border-radius:28px;overflow:hidden;box-shadow:0 14px 40px rgba(0,0,0,.12)}}
+.top{display:flex;align-items:center;justify-content:space-between;padding:14px 18px;background:var(--sf)}
+.brand{font-size:16px;font-weight:700}
+#v{flex:1;padding:18px}
+.eyebrow{margin:0 0 4px;color:var(--mu);font-size:12px}
+h2{margin:0 0 8px;font-size:22px;line-height:1.35}
+.hint,.mu{color:var(--mu);font-size:13px;line-height:1.7}.hint{margin:0 0 16px}
+.sec{margin:20px 0 9px;font-size:14px;font-weight:700}
+button{font:inherit;color:var(--tx);cursor:pointer}
+button:focus-visible,input:focus-visible{outline:3px solid var(--gr);outline-offset:2px}
+button:disabled{opacity:.45;cursor:not-allowed}
+.btn{width:100%;min-height:46px;margin-top:12px;border:0;border-radius:13px;background:var(--gr);color:var(--gt);font-weight:700}
+.sb{width:100%;min-height:44px;margin-top:9px;border:1px solid var(--ln);border-radius:12px;background:var(--sf);font-size:13px;font-weight:600}
+.lnk{border:0;background:none;color:var(--gr);font-size:12px;padding:6px 0;min-height:32px}
+.lb{display:block;margin:15px 0 7px;font-size:13px;font-weight:650}
+input{width:100%;min-height:44px;padding:0 12px;border:1px solid var(--ln);border-radius:12px;background:var(--sf);color:var(--tx);font:inherit;font-size:14px}
+.seg{display:flex;gap:7px}.seg button,.chip{flex:1;min-height:40px;border:1px solid var(--ln);border-radius:11px;background:var(--sf);color:var(--mu);font-size:13px}
+.seg .on,.chip.on{border-color:var(--gr);background:var(--gs);color:var(--gr);font-weight:650}
+.card{background:var(--sf);border:1px solid var(--ln);border-radius:15px;padding:12px 14px;margin:9px 0}
+.task{display:flex;gap:11px;align-items:flex-start}
+.ck{width:26px;height:26px;min-height:26px;border:1.5px solid var(--mu);border-radius:8px;background:none;flex:none;display:grid;place-items:center;color:var(--gt);font-size:14px;padding:0}
+.ck.d{border-color:var(--gr);background:var(--gr)}
+.tm{flex:1;min-width:0}.tt{font-size:14px;font-weight:650}.tt.d{text-decoration:line-through;opacity:.65}
+.mt{margin-top:3px;color:var(--mu);font-size:12px}.du{color:var(--mu);font-size:12px;white-space:nowrap}
+.pr{height:6px;margin:9px 0 14px;border-radius:8px;background:var(--ln);overflow:hidden}.pr span{display:block;height:100%;background:var(--gr)}
+.nt{margin:12px 0;padding:11px 12px;border-radius:12px;background:var(--gs);color:var(--gr);font-size:13px;line-height:1.7}
+.nt.w{background:var(--as);color:var(--at)}
+.row{display:flex;gap:8px;align-items:center;flex-wrap:wrap}.sp{justify-content:space-between}
+.row input{flex:1;min-width:100px}
+.chip{flex:initial;min-height:36px;padding:0 10px;font-size:12px}
+.nav{display:flex;align-items:center;gap:10px;padding:12px 16px 16px;background:var(--sf);border-top:1px solid var(--ln)}
+.nav button{min-height:42px;padding:0 16px;border:1px solid var(--ln);border-radius:12px;background:var(--sf);font-size:13px}
+.nav .nx{flex:1;border-color:var(--gr);background:var(--gr);color:var(--gt);font-weight:700}
+.nav span{color:var(--mu);font-size:12px;white-space:nowrap}
